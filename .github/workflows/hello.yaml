@@ -1,0 +1,8 @@
+name: MyFirstWorkflow
+on: [ "push" ]
+jobs:
+  my-first-workflow:
+    runs-on: ubuntu-latest
+    steps:
+    - name: echo the date on github
+      run: echo "The current time/date on Github is $(date)"
